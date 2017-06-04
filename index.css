@@ -1,0 +1,13 @@
+*{margin: 0;padding: 0;}
+body{background: #323232;font-size: 12px;font-family: '微软雅黑';padding: 100px;}
+ul,li{list-style: none;}
+.tab{width: 300px;}
+.tab .tab-nav{height: 30px;}
+.tab .tab-nav li{float: left;margin-right: 5px;background: #767676;border-radius: 3px 3px 0 0;}
+.tab .tab-nav li a{display: block;height: 30px;padding: 0 20px;color:#fff;text-decoration: none;line-height: 30px;}
+.tab .tab-nav li.actived{background: #fff;}
+.tab .tab-nav li.actived a{color: #777;}
+.tab .content-wrap{background: #fff;padding: 5px;height: 200px;}
+.tab .content-wrap .content-item{position: absolute;height: 200px;display: none;}
+.tab .content-wrap .content-item img{width: 290px;height: 200px}
+.tab .content-wrap .current{display: block;}

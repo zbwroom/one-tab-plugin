@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>以面向对象的方式写一个tab切换</title>
+    <link rel="stylesheet" href="index.css">
+    <script src='jquery-1.11.0.js'></script>
+    <script src='tabRun.js'></script>
+</head>
+
+<body>
+    <div class="js-tab tab" data-config='{
+    			"triggerType" : "click",
+    			"effect" : "fade",
+    			"invoke" : 3,
+    			"auto" : 2000
+    		}'>
+        <ul class="tab-nav">
+            <li class="actived"><a href="javascript:void(0)">科技</a></li>
+            <li><a href="javascript:void(0)">体育</a></li>
+            <li><a href="javascript:void(0)">娱乐</a></li>
+            <li><a href="javascript:void(0)">游戏</a></li>
+        </ul>
+        <div class="content-wrap">
+            <div class="content-item current"><img src="imgs/01.png"></div>
+            <div class="content-item"><img src="imgs/02.png"></div>
+            <div class="content-item"><img src="imgs/03.png"></div>
+            <div class="content-item"><img src="imgs/04.png"></div>
+        </div>
+    </div>
+
+    <script>
+    	$(function(){
+    		//tab
+    		var tab1 = new Tab($('.js-tab').eq(0));
+    	})
+    </script>
+</body>
+
+</html>
